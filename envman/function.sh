@@ -1,4 +1,4 @@
-# Initialize Cargo if the env file exists
+# Initialisation de Cargo si le fichier env existe
 [ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 
 # Initialisation Homebrew
@@ -12,3 +12,4 @@ if command -v pyenv >/dev/null; then
     eval "$(pyenv init --path)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
