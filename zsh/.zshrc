@@ -17,6 +17,10 @@ plugins=(git fzf fzf-zsh-plugin zsh-syntax-highlighting zsh-autosuggestions)
 # Starship Prompt
 eval "$(starship init zsh)"
 
+# Execute neofetch on new terminal launch
+if command -v neofetch > /dev/null; then
+  neofetch
+fi
 # Initialize Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
