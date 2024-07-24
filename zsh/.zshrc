@@ -1,9 +1,6 @@
 # ZSH - Environment Configuration
 # Author: Binary-Blade VH
 
-# Oh My Zsh Configuration
-export ZSH="$HOME/.config/.oh-my-zsh"
-
 # ENV Variables
 source ~/.config/envman/load.sh
 
@@ -17,7 +14,7 @@ if [ -f "$HOME/.fzf/shell/key-bindings.zsh" ]; then
 fi
 
 # Plugins
-plugins=(git fzf fzf-zsh-plugin zsh-autosuggestions)
+plugins=(git fzf fzf-zsh-plugin zsh-syntax-highlighting zsh-autosuggestions)
 
 # Starship Prompt
 eval "$(starship init zsh)"
@@ -27,4 +24,4 @@ if command -v neofetch > /dev/null; then
   neofetch
 fi
 # Initialize Oh My Zsh
-source $ZSH/oh-my-zsh.sh
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
