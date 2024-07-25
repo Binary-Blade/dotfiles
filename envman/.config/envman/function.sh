@@ -1,8 +1,11 @@
 # Initialisation de Cargo si le fichier env existe
 [ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 
-# Initialisation Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # Homebrew initialization
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 # Initialisation NVM
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

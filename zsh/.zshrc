@@ -23,5 +23,6 @@ eval "$(starship init zsh)"
 if command -v neofetch > /dev/null; then
   neofetch
 fi
+
 # Initialize Oh My Zsh
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
