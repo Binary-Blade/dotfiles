@@ -16,7 +16,7 @@ config.window_background_image_hsb = {
 -- config.color_scheme = "Tokyo Night"
 -- config.color_scheme = "Ubuntu"
 config.color_scheme = "Catppuccin Mocha"
-config.window_background_opacity = 0.97
+config.window_background_opacity = 0.92
 config.window_decorations = "RESIZE"
 
 -- Configure the font with a fallback option
