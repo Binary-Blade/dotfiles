@@ -10,6 +10,7 @@ brew "ripgrep"
 brew "tree"
 brew "starship"      # Prompt Starship
 brew "tmux"
+brew "stow"
 brew "neofetch"
 
 # Plugins et thèmes Oh My Zsh
