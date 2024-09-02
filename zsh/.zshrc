@@ -2,16 +2,7 @@
 # Author: Binary-Blade VH
 
 # ENV Variables
-source ~/.config/envman/load.sh
-
-# fzf Configuration
-if [ -f "$HOME/.fzf/shell/completion.zsh" ]; then
-  source "$HOME/.fzf/shell/completion.zsh"
-fi
-
-if [ -f "$HOME/.fzf/shell/key-bindings.zsh" ]; then
-  source "$HOME/.fzf/shell/key-bindings.zsh"
-fi
+source ~/.config/env-files/load.sh
 
 # Plugins
 plugins=(git fzf fzf-zsh-plugin zsh-syntax-highlighting zsh-autosuggestions)
