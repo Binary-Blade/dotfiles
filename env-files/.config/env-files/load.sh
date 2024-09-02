@@ -3,8 +3,10 @@ source ~/.config/env-files/env/global.env
 
 # Load OS-specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    source ~/.config/env-files/env/macos.env
-    source ~/.config/env-files/path/macos-path.env
+    source ~/.config/env-files/macos/macos-env.env
+    source ~/.config/env-files/macos/macos-path.env
+    # Homebrew initialization
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     source ~/.config/env-files/env/linux.env
     source ~/.config/env-files/path/linux-path.env
