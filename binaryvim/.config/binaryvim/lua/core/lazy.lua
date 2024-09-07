@@ -14,6 +14,8 @@ end
 --@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 require 'core.settings'
+local keymaps = require 'core.keymaps'
+keymaps.setup()
 
 -- [[ Configure and install plugins ]]
 require('lazy').setup {
