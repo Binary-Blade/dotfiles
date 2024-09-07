@@ -26,22 +26,13 @@ function CONFIG.diagnostic_keymaps()
   set('n', '<leader>cq', vim.diagnostic.setloclist, { desc = 'Open [C]ode [Q]uick Diagnostic list' })
 end
 
--- TIP: Disable arrow keys in normal mode
+-- Disable arrow keys in normal mode
 function CONFIG.disable_arrow_keys()
   set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
   set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
   set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
   set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 end
-
--- Highlight yank text
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-})
 
 function CONFIG.setup()
   CONFIG.general_keymaps()
