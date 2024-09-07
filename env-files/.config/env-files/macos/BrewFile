@@ -1,18 +1,15 @@
-# ~/.config/envman/Brewfile
-
-# Utilitaires de base
+# Starting brew
 brew "zsh-completions"
 brew "neovim"
 brew "git"
-brew "cargo"
 brew "fzf"
 brew "ripgrep"
 brew "tree"
 brew "starship"      # Prompt Starship
 brew "tmux"
-brew "stow"
+brew "lazygit"
 brew "neofetch"
 
-# Plugins et thèmes Oh My Zsh
+# Plugins and themes Oh My Zsh
 brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
