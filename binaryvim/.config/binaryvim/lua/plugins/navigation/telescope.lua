@@ -38,6 +38,6 @@ return {
     pcall(require('telescope').load_extension, 'ui-select')
     --    pcall(require('telescope').load_extension, 'themes')
 
-    require('core.keymaps').telescope_keymaps()
+    require('core.keymaps.plugins_keymaps').telescope_keymaps()
   end,
 }
